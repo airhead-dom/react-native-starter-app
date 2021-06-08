@@ -38,6 +38,7 @@ const TodoList: React.FC<TodoListProps> = ({style = {}}) => {
 
   useEffect(() => {
     dispatch(fetchTodoLists());
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const _renderItem: ListRenderItem<any> = ({item}) => {

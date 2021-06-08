@@ -7,13 +7,13 @@ export default class TodoService
 {
   static getBatch() {
     return axios
-      .get<TodoModel[]>(`https://jsonplaceholder.typicode.com/todos?userId=1`)
+      .get<TodoModel[]>('https://jsonplaceholder.typicode.com/todos?userId=1')
       .then(res => res.data);
   }
 
   static post(todo: TodoModel) {
     return axios
-      .post<TodoModel>(`https://jsonplaceholder.typicode.com/todos`, todo)
+      .post<TodoModel>('https://jsonplaceholder.typicode.com/todos', todo)
       .then(res => res.data);
   }
 }

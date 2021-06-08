@@ -22,7 +22,7 @@ const homeScreenStyle = StyleSheet.create({
   },
 });
 
-const HomeScreen: React.FC<HomeScreenProps> = ({style = {}, navigation}) => {
+const HomeScreen: React.FC<HomeScreenProps> = ({style = {}}) => {
   return (
     <View style={[homeScreenStyle.view, style]}>
       <Text style={homeScreenStyle.title}>React Native Starter</Text>

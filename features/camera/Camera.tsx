@@ -238,7 +238,9 @@ const Camera = () => {
 
       <View
         style={[styles.cameraActionContainer, styles.bottomActionContainer]}>
-        <View style={{display: paused ? 'none' : 'flex'}}>
+        <View
+          // eslint-disable-next-line react-native/no-inline-styles
+          style={{display: paused ? 'none' : 'flex'}}>
           <TouchableWithoutFeedback onPress={snap}>
             <View style={styles.snapButtonOuter}>
               <View style={styles.snapButtonInner} />
@@ -246,7 +248,9 @@ const Camera = () => {
           </TouchableWithoutFeedback>
         </View>
 
-        <View style={{display: paused ? 'flex' : 'none'}}>
+        <View
+          // eslint-disable-next-line react-native/no-inline-styles
+          style={{display: paused ? 'flex' : 'none'}}>
           <TouchableWithoutFeedback onPress={cancel}>
             <View style={[styles.snapButtonOuter, styles.cancelButtonOuter]}>
               <Text style={styles.cancelButtonText}>&times;</Text>
