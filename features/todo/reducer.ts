@@ -1,4 +1,4 @@
-import {createSlice, createAsyncThunk, PayloadAction} from '@reduxjs/toolkit';
+import {createSlice, createAsyncThunk} from '@reduxjs/toolkit';
 import {TodoModel} from '../../models/TodoModels';
 import TodoService from '../../services/TodoService';
 import {HttpError} from '../../utils/axiosUtil';

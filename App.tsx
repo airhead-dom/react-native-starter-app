@@ -7,6 +7,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 import axios, {AxiosError} from 'axios';
 import HomeScreen from './screens/HomeScreen';
 import TodoScreen from './screens/TodoScreen';
+import CameraScreen from './screens/CameraScreen';
 import {createError, HttpError} from './utils/axiosUtil';
 
 axios.interceptors.response.use(
@@ -51,6 +52,11 @@ const App = () => {
             name="Todo"
             component={TodoScreen}
             options={{headerTitle: 'Todo List'}}
+          />
+          <Screen
+            name="Camera"
+            component={CameraScreen}
+            options={{headerShown: false}}
           />
         </Navigator>
       </NavigationContainer>
